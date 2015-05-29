@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+     <Button
+         android:id="@+id/play_pause"
+         android:layout_width="@integer/Width"
+         android:layout_height="@integer/Height"
+         android:layout_alignBaseline="@+id/jump_medium_forward"
+         android:layout_alignBottom="@+id/jump_medium_forward"
+         android:layout_centerHorizontal="true"
+         android:text="Play" />
+
+     <Button
+         android:id="@+id/previous"
+         android:layout_width="@integer/Width"
+         android:layout_height="@integer/Height"
+         android:layout_alignBaseline="@+id/fullscreen"
+         android:layout_alignBottom="@+id/fullscreen"
+         android:layout_toLeftOf="@+id/fullscreen"
+         android:text="Prev" />
+
+     <Button
+         android:id="@+id/jump_large_forward"
+         android:layout_width="@integer/Width"
+         android:layout_height="@integer/Height"
+         android:layout_alignLeft="@+id/jump_medium_forward"
+         android:layout_below="@+id/play_pause"
+         android:text="--->" />
+
+     <Button
+         android:id="@+id/jump_small_forward"
+         android:layout_width="@integer/Width"
+         android:layout_height="@integer/Height"
+         android:layout_above="@+id/jump_medium_forward"
+         android:layout_alignLeft="@+id/jump_medium_forward"
+         android:text="->" />
+
+     <Button
+         android:id="@+id/jump_large_backward"
+         android:layout_width="@integer/Width"
+         android:layout_height="@integer/Height"
+         android:layout_alignBaseline="@+id/jump_large_forward"
+         android:layout_alignBottom="@+id/jump_large_forward"
+         android:layout_toLeftOf="@+id/play_pause"
+         android:text="&lt;---" />
+
+     <Button
+         android:id="@+id/next"
+         android:layout_width="@integer/Width"
+         android:layout_height="@integer/Height"
+         android:layout_above="@+id/jump_small_forward"
+         android:layout_alignLeft="@+id/jump_small_forward"
+         android:text="Next" />
+
+     <Button
+         android:id="@+id/fullscreen"
+         android:layout_width="@integer/Width"
+         android:layout_height="@integer/Height"
+         android:layout_alignBaseline="@+id/next"
+         android:layout_alignBottom="@+id/next"
+         android:layout_toLeftOf="@+id/next"
+         android:text="[     ]" />
+
+     <Button
+         android:id="@+id/volume_up"
+         android:layout_width="@integer/Width"
+         android:layout_height="@integer/Height"
+         android:layout_below="@+id/previous"
+         android:layout_toRightOf="@+id/previous"
+         android:text="+" />
+
+     <Button
+         android:id="@+id/volume_down"
+         android:layout_width="@integer/Width"
+         android:layout_height="@integer/Height"
+         android:layout_alignBaseline="@+id/jump_large_backward"
+         android:layout_alignBottom="@+id/jump_large_backward"
+         android:layout_toRightOf="@+id/jump_large_backward"
+         android:text="-" />
+
+     <Button
+         android:id="@+id/jump_small_backward"
+         android:layout_width="@integer/Width"
+         android:layout_height="@integer/Height"
+         android:layout_alignLeft="@+id/previous"
+         android:layout_below="@+id/previous"
+         android:text="&lt;-" />
+
+     <Button
+         android:id="@+id/jump_medium_backward"
+         android:layout_width="@integer/Width"
+         android:layout_height="@integer/Height"
+         android:layout_below="@+id/volume_up"
+         android:layout_toLeftOf="@+id/play_pause"
+         android:text="&lt;--" />
+
+     <Button
+         android:id="@+id/jump_medium_forward"
+         android:layout_width="@integer/Width"
+         android:layout_height="@integer/Height"
+         android:layout_alignParentBottom="true"
+         android:layout_marginBottom="196dp"
+         android:layout_toRightOf="@+id/play_pause"
+         android:text="-->" />
+
+
+</RelativeLayout>
